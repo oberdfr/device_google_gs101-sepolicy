@@ -42,3 +42,7 @@ allow rild modem_img_file:lnk_file r_file_perms;
 userdebug_or_eng(`
 allow rild self:process ptrace;
 ')
+
+# i dunno if it fix anything but leave it there for now
+# allow shannonIms
+allow rild shannon_ims_service_prop:file { read };
