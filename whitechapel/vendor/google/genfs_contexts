@@ -623,6 +623,7 @@ genfscon sysfs /devices/platform/1c500000.mali/dma_buf_gpu_mem                  
 genfscon sysfs /devices/platform/1c500000.mali/total_gpu_mem                                            u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1c500000.mali/kprcs                                                    u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1c500000.mali/power_policy                                             u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/1c500000.mali/dvfs_period                                              u:object_r:sysfs_gpu:s0
 
 # nvmem (Non Volatile Memory layer)
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-0/0-0050/0-00500/nvmem                              u:object_r:sysfs_memory:s0
@@ -733,3 +734,6 @@ genfscon sysfs /devices/platform/25f40000.etm    u:object_r:sysfs_devices_cs_etm
 
 # BootControl
 genfscon sysfs /kernel/boot_control/blow_ar      u:object_r:sysfs_bootctl:s0
+
+# Pixel EM
+genfscon sysfs /kernel/pixel_em/active_profile   u:object_r:sysfs_em_profile:s0
